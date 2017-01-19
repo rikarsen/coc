@@ -11,10 +11,10 @@ let ninjaBearFightData;
 
 router.get('/main/:id', function (req, res) {
     let options = {
-        uri: process.env.COC_CLAN_ID_PATH + req.params.id,
+        uri: 'https://api.clashofclans.com/v1/clans/%23' + req.params.id,
         method: 'GET',
         auth: {
-            bearer: process.env.COC_KEY
+            bearer: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImUyYWViYjYzLWJmYjMtNGMxOS1iYjdlLTk3NjJhOGE5NGY4MiIsImlhdCI6MTQ4Mzk3Mzk5OCwic3ViIjoiZGV2ZWxvcGVyLzY3ZjI4YzUzLWQyZWMtMzIxYi1lZTkwLTM2ZmU2NTI1MjZhZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjUuNjMuMTY1LjE2MyJdLCJ0eXBlIjoiY2xpZW50In1dfQ.voZquJ0NB5JH2963gH8hkhL7jf3FpZBt52X4cJdV8nnJ8VprNSmxUX2uvSxSkZeh8CcRckkj-Salsu0mTo6pdg'
         }
     };
 
