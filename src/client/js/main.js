@@ -1,5 +1,5 @@
 function getClanInfo(clanID){
-  $.get( '/main/' + clanID, function( data ) {
+  $.get( '/main/' + '90LJ2QUP', function( data ) {
   	if (data === false) {
   		$( '.result' ).html( 'Oh no! something went wrong' );
   	} else {
