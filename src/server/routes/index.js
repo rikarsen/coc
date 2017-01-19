@@ -23,7 +23,7 @@ router.get('/main/:id', function (req, res) {
     if (todaysDate === currentDate) {
         res.send(ninjaBearFightData);
     } else {
-        customRequest(options, function (error, response) {
+        customRequest(options, function (error, response, body) {
             if (!error && response.statusCode == 200) {
                 currentDate = todaysDate;
                 ninjaBearFightData = response.body;
