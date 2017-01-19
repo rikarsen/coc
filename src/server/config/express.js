@@ -3,19 +3,16 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 
+module.exports = function (app) {
+    app.use(morgan('dev'));
+    app.use(express.static(path.join(__dirname, '../../')));
+    app.use(bodyParser.urlencoded({extended: false}));
+    app.use(bodyParser.json());
 
-module.exports = function(app) {
+    app.use('/', require('../routes'));
 
-  app.use(morgan('dev'));
-  app.use(express.static(path.join(__dirname, '../../')));
-  app.use(bodyParser.urlencoded({ extended: false }));
-  app.use(bodyParser.json());
-
-  app.use('/', require('../routes'));
-
-  app.use(function (err, req, res, next) {
-    console.error(err.stack);
-    res.status(500).send(err.message);
-  });
-
-}
+    app.use(function (err, req, res) {
+        console.error(err.stack);
+        res.status(500).send(err.message);
+    });
+};

@@ -1,6 +1,6 @@
 {
   "name": "cocclanmanagertool",
-  "version": "1.0.0",
+  "version": "1.0.0-8c7a-d",
   "description": "",
   "main": "./src/server/app.js",
   "scripts": {
@@ -37,7 +37,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "moment": "^2.15.0",
+    "moment": "^2.17.1",
     "morgan": "^1.7.0",
     "nodemon": "^1.10.2",
     "path": "^0.12.7",
