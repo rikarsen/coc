@@ -7,7 +7,7 @@ const path = require('path');
 module.exports = function(app) {
 
   app.use(morgan('dev'));
-  app.use(express.static(path.join(__dirname, '../../client')));
+  app.use(express.static(path.join(__dirname, '../../')));
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(bodyParser.json());
 
