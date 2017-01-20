@@ -1,4 +1,6 @@
-.idea/
-/_temp/
-/node_modules/
+# Created by .ignore support plugin (hsz.mobi)
 .DS_Store
+.gitignore
+.idea/
+_temp/
+node_modules/

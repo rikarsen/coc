@@ -1,22 +1,38 @@
 {
-  "name": "cocclanmanagertool",
-  "version": "1.0.0-8c7a-d",
-  "description": "",
-  "main": "./src/server/app.js",
+  "name": "BootstrapAngularAdminWebApp",
+  "version": "2.0.1",
+  "description": "Admin web application template with Bootstrap 3 and AngularJS.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/server/app.js"
+    "start": "node node_modules/http-server/bin/http-server -o"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rikarsen/coc.git"
-  },
-  "author": "Arsen Babajanyan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rikarsen/coc/issues"
-  },
-  "homepage": "https://github.com/rikarsen/coc#readme",
+  "keywords": [
+    "AngularJS",
+    "admin",
+    "admin",
+    "dashboard",
+    "admin",
+    "panel",
+    "app",
+    "charts",
+    "components",
+    "flat",
+    "flat",
+    "ui",
+    "responsive",
+    "responsive",
+    "layout",
+    "ui",
+    "kit",
+    "ui",
+    "route",
+    "web",
+    "app",
+    "widgets"
+  ],
+  "repository": "https://heyflat@bitbucket.org/heyflat/angulr.git",
+  "author": "Flatfull",
+  "license": "Envato REGULAR LICENSE",
+  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bower-install-simple": "^0.9.3",
@@ -31,16 +47,6 @@
     "grunt-swig": "^0.2.1",
     "gruntfile-gtx": "^0.3.0",
     "http-server": "^0.6.1",
-    "require-directory": "^2.0.0",
-    "webpack": "^1.13.2"
-  },
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "moment": "^2.17.1",
-    "morgan": "^1.7.0",
-    "nodemon": "^1.10.2",
-    "path": "^0.12.7",
-    "request": "^2.74.0"
+    "require-directory": "^2.0.0"
   }
 }
